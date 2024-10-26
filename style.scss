@@ -1,0 +1,271 @@
+@import 'var';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    .center {
+        // padding-left: 120px;
+        // padding-right: 120px;
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+    }
+
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+.top {
+    
+    height: 800px;
+    background: $color-green2;
+    background-image: url(./img/bg_2.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -7% 90%;
+    // background-position: -145% 100%;
+    overflow: hidden;
+
+    &__nav {
+        height: 90px;
+        width: 3220px;
+        margin-top: 156px;
+        display: flex;   
+        align-items: center;
+        background-color: $color-green1;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);  
+    }
+
+    &__nav-animated {
+        text-transform: uppercase;
+        color: $color-black2;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+    }
+
+    &__nav-animated::after {
+        content: url(./img/star_animated.svg);
+        margin-left: 51px;
+        margin-right: 51px;
+    }
+}
+
+.heading {
+    color: $color-black2;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    padding-top: 196px;
+}
+
+.text {
+    color: $color-black2;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-top: 24px;
+    padding-bottom: 48px;
+    width: 720px;
+}
+
+
+.link-btn {
+    width: 247px;
+    height: 66px;
+    box-sizing: border-box;
+    border: 1px solid $color-black2;
+    border-radius: 60px;
+    background: $color-black2;
+    color: $color-white;
+    font-size: 24px;
+    font-weight: 600;
+    outline: none;
+    padding: 16px 28px 16px 28px;
+    display: flex;
+    justify-content: space-around;
+    transition: all 0.5s;
+    
+}
+
+.link-btn:hover {
+    box-sizing: border-box;
+    border: 1px solid $color-black1;
+    border-radius: 60px;
+    color: $color-black1;
+    background: $color-white;
+}
+
+.about-games {
+    background-color: $color-black2;
+    background-image: url(./img/bg_3.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -15% 25%;
+    padding-bottom: 50px;
+
+    &__heading {
+        color: $color-white;
+        padding-top: 94px;
+    }
+
+    &__text {
+        color: $color-white;
+        padding-top: 24px;
+        padding-bottom: 72px;
+    }
+
+    // &__box {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     gap: 32px;
+    // }
+
+    &__box1 {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px 32px;
+    }
+
+    &__box2 {
+        display: flex;
+        align-items: flex-end;
+        gap: 16px 32px;
+    }
+
+    &__item {
+        width: 378px;
+        height: 473px;
+        border-radius: 30px;
+        box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+        box-sizing: border-box;
+        background: $color-white;
+        transition: all 0.5s;
+    }
+
+    &__item:hover {
+        scale: 1.05;
+        // height: 512px;
+    }
+
+    &__item-big1 {
+        height: 512px;
+    }
+
+    &__item-big2 {
+        height: 551px;
+    }
+
+    &__card-wrapper {
+        border-radius: 30px;
+        height: 314px;
+        width: 378px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__wrapper-1 {
+        background: $color-purple1;
+    }
+
+    &__bg-1 {
+        border-radius: 30px;
+        position: absolute;
+        left: -120px;
+        top: -157px;
+    }
+
+    &__wrapper-2 {
+        background: $color-orange1;
+    }
+
+    &__bg-2 {
+        border-radius: 30px;
+        position: absolute;
+        left: -60px;
+        top: -100px;
+    }
+
+    &__wrapper-3 {
+        background: $color-lavanda1;
+    }
+
+    &__bg-3 {
+        border-radius: 30px;
+        position: absolute;
+        left: -146px;
+        top: -70px;
+    }
+
+    &__wrapper-4 {
+        background: $color-purple2;
+    }
+
+    &__bg-4 {
+        border-radius: 30px;
+        position: absolute;  
+        left: -125px;
+        top: -105px;
+    }
+
+    &__wrapper-5 {
+        background: $color-green3;
+    }
+
+    &__bg-5 {
+        border-radius: 30px;
+        position: absolute; 
+        left: -125px;
+        top: -106px;
+    }
+
+    &__wrapper-6 {
+        background: $color-blue1;
+    }
+
+    &__bg-6 {
+        border-radius: 30px;
+        position: absolute;  
+        left: -65px;
+        top: -93px;
+    }
+
+    &__card-info {
+        padding: 32px 32px 36px 32px;
+        background: $color-white;
+        border-radius: 30px;
+        box-sizing: border-box;
+    }
+
+    &__number {
+        padding: 8px 16px 10px 16px;
+        color: $color-black2;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    &__name {
+        color: $color-black2;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        padding-top: 16px;
+    }
+}

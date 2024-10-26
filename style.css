@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body .center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+body ul {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+
+.top {
+  height: 800px;
+  background: rgb(225, 255, 143);
+  background-image: url(./img/bg_2.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -7% 90%;
+  overflow: hidden;
+}
+.top__nav {
+  height: 90px;
+  width: 3220px;
+  margin-top: 156px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(188, 236, 48);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+.top__nav-animated {
+  text-transform: uppercase;
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+}
+.top__nav-animated::after {
+  content: url(./img/star_animated.svg);
+  margin-left: 51px;
+  margin-right: 51px;
+}
+
+.heading {
+  color: rgb(32, 32, 39);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  padding-top: 196px;
+}
+
+.text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  width: 720px;
+}
+
+.link-btn {
+  width: 247px;
+  height: 66px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 600;
+  outline: none;
+  padding: 16px 28px 16px 28px;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.5s;
+}
+
+.link-btn:hover {
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 60px;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.about-games {
+  background-color: rgb(32, 32, 39);
+  background-image: url(./img/bg_3.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: -15% 25%;
+  padding-bottom: 50px;
+}
+.about-games__heading {
+  color: rgb(255, 255, 255);
+  padding-top: 94px;
+}
+.about-games__text {
+  color: rgb(255, 255, 255);
+  padding-top: 24px;
+  padding-bottom: 72px;
+}
+.about-games__box1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px 32px;
+}
+.about-games__box2 {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px 32px;
+}
+.about-games__item {
+  width: 378px;
+  height: 473px;
+  border-radius: 30px;
+  box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  transition: all 0.5s;
+}
+.about-games__item:hover {
+  scale: 1.05;
+}
+.about-games__item-big1 {
+  height: 512px;
+}
+.about-games__item-big2 {
+  height: 551px;
+}
+.about-games__card-wrapper {
+  border-radius: 30px;
+  height: 314px;
+  width: 378px;
+  overflow: hidden;
+  position: relative;
+}
+.about-games__wrapper-1 {
+  background: rgb(173, 97, 255);
+}
+.about-games__bg-1 {
+  border-radius: 30px;
+  position: absolute;
+  left: -120px;
+  top: -157px;
+}
+.about-games__wrapper-2 {
+  background: rgb(253, 173, 0);
+}
+.about-games__bg-2 {
+  border-radius: 30px;
+  position: absolute;
+  left: -60px;
+  top: -100px;
+}
+.about-games__wrapper-3 {
+  background: rgb(86, 94, 239);
+}
+.about-games__bg-3 {
+  border-radius: 30px;
+  position: absolute;
+  left: -146px;
+  top: -70px;
+}
+.about-games__wrapper-4 {
+  background: rgb(39, 26, 88);
+}
+.about-games__bg-4 {
+  border-radius: 30px;
+  position: absolute;
+  left: -125px;
+  top: -105px;
+}
+.about-games__wrapper-5 {
+  background: rgb(153, 209, 0);
+}
+.about-games__bg-5 {
+  border-radius: 30px;
+  position: absolute;
+  left: -125px;
+  top: -106px;
+}
+.about-games__wrapper-6 {
+  background: rgb(39, 26, 88);
+}
+.about-games__bg-6 {
+  border-radius: 30px;
+  position: absolute;
+  left: -65px;
+  top: -93px;
+}
+.about-games__card-info {
+  padding: 32px 32px 36px 32px;
+  background: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.about-games__number {
+  padding: 8px 16px 10px 16px;
+  color: rgb(32, 32, 39);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+}
+.about-games__name {
+  color: rgb(32, 32, 39);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  padding-top: 16px;
+}/*# sourceMappingURL=style.css.map */
