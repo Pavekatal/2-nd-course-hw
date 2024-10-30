@@ -250,6 +250,26 @@ body a {
     gap: 16px 28px;
   }
 }
+@media (min-width: 168px) and (max-width: 833px) {
+  body .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .about-games__item {
+    width: 354px;
+    height: 449px;
+  }
+  .about-games__item-big1 {
+    height: 488px;
+  }
+  .about-games__item-big2 {
+    height: 527px;
+  }
+  .about-games__card-wrapper {
+    width: 354px;
+    height: 290px;
+  }
+}
 @media (max-width: 767px) {
   body .center {
     padding-left: 16px;

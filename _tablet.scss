@@ -28,3 +28,35 @@
         }
     }
 }
+
+@media (min-width: 168px) and (max-width: 833px) {
+
+    body {
+
+        .center {
+            padding-left: calc(50% - 368px);
+            padding-right: calc(50% - 368px);
+        }
+    }
+
+    .about-games {
+        
+        &__item {
+            width: 354px;
+            height: 449px;
+        }
+
+        &__item-big1 {
+            height: 488px;
+        }
+
+        &__item-big2 {
+            height: 527px;
+        }
+
+        &__card-wrapper {
+            width: 354px;
+            height: 290px;
+        }
+    }
+}
