@@ -1,0 +1,73 @@
+@media (max-width: 767px) {
+
+    @import 'var';
+
+    body {
+
+        .center {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+    }
+
+    .top {
+        height: 700px;
+        background-image: url(./img/bg-mobil_2.png);
+        background-position: -50% 400%;
+
+        &__heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+        }
+
+        &__nav {
+            height: 51px;
+            margin-top: 131px;
+        }
+
+        &__nav-animated {
+            font-size: 16px;
+        }
+
+        &__nav-animated::after {
+            content: url(./img/star_animated_small.svg);
+            margin-left: 27px;
+            margin-right: 27px;
+        }
+    }
+
+    .heading {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        padding-top: 147px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 36px;
+        width: 296px;
+    }
+
+    .link-btn {
+        width: 285px;
+        height: 55px;
+        align-items: center;
+    }
+
+    .about-games {
+        display: none;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+  
+    .top {
+        background-position: 55% 400%;
+    }
+}
