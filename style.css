@@ -35,10 +35,12 @@ body a {
   overflow: hidden;
   position: relative;
 }
+.top__heading {
+  padding-top: 196px;
+}
 .top__nav {
   height: 90px;
   width: 3220px;
-  margin-top: 156px;
   display: flex;
   align-items: center;
   background-color: rgb(188, 236, 48);
@@ -67,7 +69,6 @@ body a {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  padding-top: 196px;
 }
 
 .text {
@@ -75,14 +76,12 @@ body a {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  padding-top: 24px;
-  padding-bottom: 48px;
+  margin-top: 24px;
+  margin-bottom: 48px;
   width: 720px;
 }
 
 .link-btn {
-  width: 247px;
-  height: 66px;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -91,9 +90,8 @@ body a {
   font-size: 24px;
   font-weight: 600;
   outline: none;
-  padding: 16px 28px 16px 28px;
-  display: flex;
-  justify-content: space-around;
+  padding: 17px 64px 17px 64px;
+  display: inline-block;
   transition: all 0.5s;
 }
 
@@ -105,22 +103,25 @@ body a {
   background: rgb(255, 255, 255);
 }
 
-.about-games {
+.games {
   background-color: rgb(32, 32, 39);
+}
+
+.about-games {
   background-image: url(./img/bg_3.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: -15% 25%;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .about-games__heading {
   color: rgb(255, 255, 255);
-  padding-top: 94px;
 }
 .about-games__text {
   color: rgb(255, 255, 255);
-  padding-top: 24px;
-  padding-bottom: 72px;
+  margin-top: 24px;
+  margin-bottom: 72px;
 }
 .about-games__box1 {
   display: flex;
