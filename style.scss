@@ -1,5 +1,6 @@
 @import 'var';
 
+
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +19,6 @@ body {
     font-style: normal;
 
     .center {
-        // padding-left: 120px;
-        // padding-right: 120px;
         padding-left: calc(50% - 600px);
         padding-right: calc(50% - 600px);
     }
@@ -40,19 +39,24 @@ body {
     background-repeat: no-repeat;
     background-size: auto;
     background-position: -7% 90%;
-    // background-position: -145% 100%;
     overflow: hidden;
+    position: relative;
+
+    &__heading {
+        padding-top: 196px;
+    }
 
     &__nav {
         height: 90px;
         width: 3220px;
-        margin-top: 156px;
         display: flex;   
         align-items: center;
         background-color: $color-green1;
         box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(50px);  
+        backdrop-filter: blur(50px);
+        position: absolute;
+        bottom: 0;  
     }
 
     &__nav-animated {
@@ -61,7 +65,6 @@ body {
         font-size: 30px;
         font-weight: 700;
         line-height: 110%;
-        letter-spacing: 4%;
     }
 
     &__nav-animated::after {
@@ -76,7 +79,6 @@ body {
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
-    padding-top: 196px;
 }
 
 .text {
@@ -84,15 +86,15 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
-    padding-top: 24px;
-    padding-bottom: 48px;
+    margin-top: 24px;
+    margin-bottom: 48px;
     width: 720px;
 }
 
 
 .link-btn {
-    width: 247px;
-    height: 66px;
+    // width: 247px;
+    // height: 66px;
     box-sizing: border-box;
     border: 1px solid $color-black2;
     border-radius: 60px;
@@ -101,9 +103,10 @@ body {
     font-size: 24px;
     font-weight: 600;
     outline: none;
-    padding: 16px 28px 16px 28px;
-    display: flex;
-    justify-content: space-around;
+    padding: 17px 64px 17px 64px;
+    display: inline-block;
+    // display: flex;
+    // justify-content: space-around;
     transition: all 0.5s;
     
 }
@@ -116,30 +119,29 @@ body {
     background: $color-white;
 }
 
-.about-games {
+.games {
     background-color: $color-black2;
+}
+
+.about-games {
+    
     background-image: url(./img/bg_3.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -15% 25%;
-    padding-bottom: 50px;
+    padding-top: 94px;
+    margin-bottom: 50px;
 
     &__heading {
         color: $color-white;
-        padding-top: 94px;
+        
     }
 
     &__text {
         color: $color-white;
-        padding-top: 24px;
-        padding-bottom: 72px;
+        margin-top: 24px;
+        margin-bottom: 72px;
     }
-
-    // &__box {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     gap: 32px;
-    // }
 
     &__box1 {
         display: flex;
@@ -165,7 +167,6 @@ body {
 
     &__item:hover {
         scale: 1.05;
-        // height: 512px;
     }
 
     &__item-big1 {
@@ -273,3 +274,6 @@ body {
         padding-top: 16px;
     }
 }
+
+@import 'tablet';
+@import 'mobil';

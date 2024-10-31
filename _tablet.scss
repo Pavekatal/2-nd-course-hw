@@ -1,0 +1,62 @@
+@media (max-width: 1024px) {
+
+    @import 'var'; 
+
+    body {
+
+        .center {
+            padding-left: calc(50% - 393px);
+            padding-right: calc(50% - 393px);
+        }
+    }
+
+    .about-games {
+
+        &__box {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &__box1 {
+            flex-wrap: wrap;
+            gap: 16px 28px;
+        }
+
+        &__box2 {
+            flex-wrap: wrap;
+            gap: 16px 28px;
+        }
+    }
+}
+
+@media (min-width: 168px) and (max-width: 833px) {
+
+    body {
+
+        .center {
+            padding-left: calc(50% - 368px);
+            padding-right: calc(50% - 368px);
+        }
+    }
+
+    .about-games {
+        
+        &__item {
+            width: 354px;
+            height: 449px;
+        }
+
+        &__item-big1 {
+            height: 488px;
+        }
+
+        &__item-big2 {
+            height: 527px;
+        }
+
+        &__card-wrapper {
+            width: 354px;
+            height: 290px;
+        }
+    }
+}

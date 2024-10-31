@@ -33,11 +33,14 @@ body a {
   background-size: auto;
   background-position: -7% 90%;
   overflow: hidden;
+  position: relative;
+}
+.top__heading {
+  padding-top: 196px;
 }
 .top__nav {
   height: 90px;
   width: 3220px;
-  margin-top: 156px;
   display: flex;
   align-items: center;
   background-color: rgb(188, 236, 48);
@@ -45,6 +48,8 @@ body a {
   border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
+  position: absolute;
+  bottom: 0;
 }
 .top__nav-animated {
   text-transform: uppercase;
@@ -52,7 +57,6 @@ body a {
   font-size: 30px;
   font-weight: 700;
   line-height: 110%;
-  letter-spacing: 4%;
 }
 .top__nav-animated::after {
   content: url(./img/star_animated.svg);
@@ -65,7 +69,6 @@ body a {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  padding-top: 196px;
 }
 
 .text {
@@ -73,14 +76,12 @@ body a {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  padding-top: 24px;
-  padding-bottom: 48px;
+  margin-top: 24px;
+  margin-bottom: 48px;
   width: 720px;
 }
 
 .link-btn {
-  width: 247px;
-  height: 66px;
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
@@ -89,9 +90,8 @@ body a {
   font-size: 24px;
   font-weight: 600;
   outline: none;
-  padding: 16px 28px 16px 28px;
-  display: flex;
-  justify-content: space-around;
+  padding: 17px 64px 17px 64px;
+  display: inline-block;
   transition: all 0.5s;
 }
 
@@ -103,22 +103,25 @@ body a {
   background: rgb(255, 255, 255);
 }
 
-.about-games {
+.games {
   background-color: rgb(32, 32, 39);
+}
+
+.about-games {
   background-image: url(./img/bg_3.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: -15% 25%;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 .about-games__heading {
   color: rgb(255, 255, 255);
-  padding-top: 94px;
 }
 .about-games__text {
   color: rgb(255, 255, 255);
-  padding-top: 24px;
-  padding-bottom: 72px;
+  margin-top: 24px;
+  margin-bottom: 72px;
 }
 .about-games__box1 {
   display: flex;
@@ -228,4 +231,98 @@ body a {
   font-weight: 700;
   line-height: 39px;
   padding-top: 16px;
+}
+
+@media (max-width: 1024px) {
+  body .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .about-games__box {
+    display: flex;
+    align-items: flex-start;
+  }
+  .about-games__box1 {
+    flex-wrap: wrap;
+    gap: 16px 28px;
+  }
+  .about-games__box2 {
+    flex-wrap: wrap;
+    gap: 16px 28px;
+  }
+}
+@media (min-width: 168px) and (max-width: 833px) {
+  body .center {
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
+  }
+  .about-games__item {
+    width: 354px;
+    height: 449px;
+  }
+  .about-games__item-big1 {
+    height: 488px;
+  }
+  .about-games__item-big2 {
+    height: 527px;
+  }
+  .about-games__card-wrapper {
+    width: 354px;
+    height: 290px;
+  }
+}
+@media (max-width: 767px) {
+  body .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 700px;
+    background-image: url(./img/bg-mobil_2.png);
+    background-position: -50% 400%;
+  }
+  .top__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__nav {
+    height: 51px;
+    margin-top: 131px;
+  }
+  .top__nav-animated {
+    font-size: 16px;
+  }
+  .top__nav-animated::after {
+    content: url(./img/star_animated_small.svg);
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+  .heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    padding-top: 147px;
+    text-align: center;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 36px;
+    width: 296px;
+  }
+  .link-btn {
+    width: 285px;
+    height: 55px;
+    align-items: center;
+  }
+  .about-games {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 767px) {
+  .top {
+    background-position: 55% 400%;
+  }
 }/*# sourceMappingURL=style.css.map */
