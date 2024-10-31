@@ -27,12 +27,14 @@ alert (c / d);
 // // Task 05
 
 let e = 2;
-alert (result = e ** 5);
+let result = e ** 5;
+alert (result);
 
 // // Task 06
 
 let f = 9, g = 2; 
-alert (moduloResult = f % g);
+let moduloResult = f % g
+alert (moduloResult);
 
 // // Task 07
 
