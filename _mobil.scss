@@ -60,8 +60,11 @@
         align-items: center;
     }
 
-    .about-games {
-        display: none;
+    .games {
+
+        &__about {
+            display: none;
+        }
     }
 }
 

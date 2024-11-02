@@ -26,6 +26,7 @@ body {
     ul {
         list-style: none;
     }
+
     a {
         text-decoration: none;
     }
@@ -121,20 +122,18 @@ body {
 
 .games {
     background-color: $color-black2;
-}
-
-.about-games {
-    
-    background-image: url(./img/bg_3.png);
+    background-image: url(./img/game-bg.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: -15% 25%;
-    padding-top: 94px;
-    margin-bottom: 50px;
+    
+    &__about {
+        padding-top: 94px;
+        margin-bottom: 50px;
+    }
 
     &__heading {
         color: $color-white;
-        
     }
 
     &__text {
@@ -272,6 +271,113 @@ body {
         font-weight: 700;
         line-height: 39px;
         padding-top: 16px;
+    }
+
+    &__order-0 {
+        order: 0;
+    }
+
+    &__order-1 {
+        order: 1;
+    }
+
+    &__mini {
+        padding-bottom: 144px;
+    }
+
+    &__mini-box{
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__mini-text {
+        margin-bottom: 36px;
+        width: 457px;
+    }
+
+    &__mini-item {
+        width: 1200px;
+        height: 500px;
+        border-radius: 30px;
+        box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+        box-sizing: border-box;
+        background: $color-white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__mini-card-info {
+        padding: 48px;
+        width: 600px;
+    }
+
+    &__mini-name {
+        color: $color-black2;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+    }
+
+    &__mini-card-wrapper {
+        width: 600px;
+        height: 500px;
+    }
+
+    &__mini-bg-1 {
+        left: -14px;
+        top: -59px;
+        scale: 1.57;
+    }
+
+    &__mini-bg-2 {
+        left: 54px;
+        top: -8px;
+        scale: 1.57;
+    }
+
+    &__mini-bg-3 {
+        left: -34px;
+        top: 18px;
+        scale: 1.57;
+    }
+
+    &__mini-bg-4 {
+        left: -12px;
+        top: -16px;
+        scale: 1.57;
+    }
+
+    &__mini-bg-5 {
+        left: -12px;
+        top: -16px;
+        scale: 1.57;
+    }
+
+    &__mini-bg-6 {
+        left: 48px;
+        top: -8px;
+        scale: 1.57;
+    }
+}
+
+
+.footer {
+    height: 150px;
+    background: $color-green4;
+    // padding-top: 61px;
+    // padding-bottom: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        color: $color-black1;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
     }
 }
 
