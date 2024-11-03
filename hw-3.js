@@ -9,7 +9,6 @@ if (correctPassword === password) {
     console.log('Пароль введен неправильно');
 }
 
-
 // Task 02
 
 let c = Number(prompt('Введите число'));
@@ -70,7 +69,6 @@ switch (monthNumber) {
 // Additional task 01
 
 let anyNumber = prompt('Пожалуйста, введите любое число');
-
 let convertedNumber = Number(anyNumber);
 
 if (isNaN(convertedNumber)) {
@@ -86,33 +84,34 @@ if (isNaN(convertedNumber)) {
 // Additional task 02
 
 let clientOS = Number(prompt('Введите 0, если используете iOS. Если используете Android, введите 1'));
+let message;
 
 if (clientOS === 0) {
-    console.log('Установите версию приложения для iOS по ссылке');
+    message = 'Установите версию приложения для iOS по ссылке';
+} else if (clientOS === 1) {
+    message = 'Установите версию приложения для Android по ссылке';
 } else {
-    if (clientOS === 1) {
-        console.log('Установите версию приложения для Android по ссылке'); 
-    } else {
-        console.log('ОС пользователя не определена');
+    message =  'ОС пользователя не определена';
     }
-}
+
+console.log(message);
 
 // Additional task 03
 
 let clientOS2 = Number(prompt('Введите 0, если используете iOS. Если используете Android, введите 1'));
 let clientDeviceYear = Number(prompt('Укажите год выпуска Вашего устройства'));
-let message; 
+let message2; 
 
 if (clientOS === 0) {
-    message = clientDeviceYear >= 2015 
+    message2 = clientDeviceYear >= 2015 
     ? 'Установите версию приложения для iOS по ссылке' 
     : 'Установите облегченную версию приложения для iOS по ссылке';
 } else if (clientOS === 1) {
-    message = clientDeviceYear >= 2015
+    message2 = clientDeviceYear >= 2015
     ? 'Установите версию приложения для Android по ссылке'
     : 'Установите облегченную версию приложения для Android по ссылке';
 } else {
     console.log('ОС пользователя не определена');
 }
 
-console.log(message);
+console.log(message2);
