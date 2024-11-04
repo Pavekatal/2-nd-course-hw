@@ -105,35 +105,34 @@ body a {
 
 .games {
   background-color: rgb(32, 32, 39);
-}
-
-.about-games {
-  background-image: url(./img/bg_3.png);
+  background-image: url(./img/game-bg.png);
   background-size: auto;
   background-repeat: no-repeat;
   background-position: -15% 25%;
+}
+.games__about {
   padding-top: 94px;
   margin-bottom: 50px;
 }
-.about-games__heading {
+.games__heading {
   color: rgb(255, 255, 255);
 }
-.about-games__text {
+.games__text {
   color: rgb(255, 255, 255);
   margin-top: 24px;
   margin-bottom: 72px;
 }
-.about-games__box1 {
+.games__box1 {
   display: flex;
   align-items: flex-start;
   gap: 16px 32px;
 }
-.about-games__box2 {
+.games__box2 {
   display: flex;
   align-items: flex-end;
   gap: 16px 32px;
 }
-.about-games__item {
+.games__item {
   width: 378px;
   height: 473px;
   border-radius: 30px;
@@ -142,95 +141,177 @@ body a {
   background: rgb(255, 255, 255);
   transition: all 0.5s;
 }
-.about-games__item:hover {
+.games__item:hover {
   scale: 1.05;
 }
-.about-games__item-big1 {
+.games__item-big1 {
   height: 512px;
 }
-.about-games__item-big2 {
+.games__item-big2 {
   height: 551px;
 }
-.about-games__card-wrapper {
+.games__card-wrapper {
   border-radius: 30px;
   height: 314px;
   width: 378px;
   overflow: hidden;
   position: relative;
 }
-.about-games__wrapper-1 {
+.games__wrapper-1 {
   background: rgb(173, 97, 255);
 }
-.about-games__bg-1 {
+.games__bg-1 {
   border-radius: 30px;
   position: absolute;
   left: -120px;
   top: -157px;
 }
-.about-games__wrapper-2 {
+.games__wrapper-2 {
   background: rgb(253, 173, 0);
 }
-.about-games__bg-2 {
+.games__bg-2 {
   border-radius: 30px;
   position: absolute;
   left: -60px;
   top: -100px;
 }
-.about-games__wrapper-3 {
+.games__wrapper-3 {
   background: rgb(86, 94, 239);
 }
-.about-games__bg-3 {
+.games__bg-3 {
   border-radius: 30px;
   position: absolute;
   left: -146px;
   top: -70px;
 }
-.about-games__wrapper-4 {
+.games__wrapper-4 {
   background: rgb(39, 26, 88);
 }
-.about-games__bg-4 {
+.games__bg-4 {
   border-radius: 30px;
   position: absolute;
   left: -125px;
   top: -105px;
 }
-.about-games__wrapper-5 {
+.games__wrapper-5 {
   background: rgb(153, 209, 0);
 }
-.about-games__bg-5 {
+.games__bg-5 {
   border-radius: 30px;
   position: absolute;
   left: -125px;
   top: -106px;
 }
-.about-games__wrapper-6 {
+.games__wrapper-6 {
   background: rgb(39, 26, 88);
 }
-.about-games__bg-6 {
+.games__bg-6 {
   border-radius: 30px;
   position: absolute;
   left: -65px;
   top: -93px;
 }
-.about-games__card-info {
+.games__card-info {
   padding: 32px 32px 36px 32px;
   background: rgb(255, 255, 255);
   border-radius: 30px;
   box-sizing: border-box;
 }
-.about-games__number {
+.games__number {
   padding: 8px 16px 10px 16px;
   color: rgb(32, 32, 39);
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
 }
-.about-games__name {
+.games__name {
   color: rgb(32, 32, 39);
   font-size: 32px;
   font-weight: 700;
   line-height: 39px;
   padding-top: 16px;
+}
+.games__order-0 {
+  order: 0;
+}
+.games__order-1 {
+  order: 1;
+}
+.games__mini {
+  padding-bottom: 144px;
+}
+.games__mini-box {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.games__mini-text {
+  margin-bottom: 36px;
+  width: 457px;
+}
+.games__mini-item {
+  width: 1200px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+}
+.games__mini-card-info {
+  padding: 48px;
+  width: 600px;
+}
+.games__mini-name {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+}
+.games__mini-card-wrapper {
+  width: 600px;
+  height: 500px;
+}
+.games__mini-bg-1 {
+  left: -196px;
+  top: -240px;
+}
+.games__mini-bg-2 {
+  left: -103px;
+  top: -153px;
+}
+.games__mini-bg-3 {
+  left: -302px;
+  top: -111px;
+}
+.games__mini-bg-4 {
+  left: -192px;
+  top: -166px;
+}
+.games__mini-bg-5 {
+  left: -192px;
+  top: -166px;
+}
+.games__mini-bg-6 {
+  left: -86px;
+  top: -144px;
+}
+
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -238,15 +319,15 @@ body a {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
-  .about-games__box {
+  .games__box {
     display: flex;
     align-items: flex-start;
   }
-  .about-games__box1 {
+  .games__box1 {
     flex-wrap: wrap;
     gap: 16px 28px;
   }
-  .about-games__box2 {
+  .games__box2 {
     flex-wrap: wrap;
     gap: 16px 28px;
   }
@@ -256,17 +337,17 @@ body a {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
   }
-  .about-games__item {
+  .games__item {
     width: 354px;
     height: 449px;
   }
-  .about-games__item-big1 {
+  .games__item-big1 {
     height: 488px;
   }
-  .about-games__item-big2 {
+  .games__item-big2 {
     height: 527px;
   }
-  .about-games__card-wrapper {
+  .games__card-wrapper {
     width: 354px;
     height: 290px;
   }
@@ -317,7 +398,7 @@ body a {
     height: 55px;
     align-items: center;
   }
-  .about-games {
+  .games__about {
     display: none;
   }
 }
