@@ -322,6 +322,7 @@ body a {
   .games__box {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
   }
   .games__box1 {
     flex-wrap: wrap;
@@ -331,8 +332,55 @@ body a {
     flex-wrap: wrap;
     gap: 16px 28px;
   }
+  .games__mini-item {
+    width: 786px;
+  }
+  .games__mini-card-info {
+    width: 393px;
+    padding: 32px;
+  }
+  .games__mini-name {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  .games__mini-text {
+    width: 329px;
+  }
+  .games__mini-card-wrapper {
+    width: 393px;
+  }
+  .games__mini-bg-1 {
+    left: -290px;
+    top: -241px;
+    scale: 0.8;
+  }
+  .games__mini-bg-2 {
+    left: -190px;
+    top: -152px;
+    scale: 0.76;
+  }
+  .games__mini-bg-3 {
+    left: -346px;
+    top: -127px;
+    scale: 0.9;
+  }
+  .games__mini-bg-4 {
+    left: -302px;
+    top: -189px;
+    scale: 0.9;
+  }
+  .games__mini-bg-5 {
+    left: -302px;
+    top: -189px;
+    scale: 0.9;
+  }
+  .games__mini-bg-6 {
+    left: -142px;
+    top: -178px;
+    scale: 0.9;
+  }
 }
-@media (min-width: 168px) and (max-width: 833px) {
+@media (min-width: 768px) and (max-width: 833px) {
   body .center {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
@@ -350,6 +398,59 @@ body a {
   .games__card-wrapper {
     width: 354px;
     height: 290px;
+  }
+  .games__mini {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .games__mini-item {
+    width: 724px;
+  }
+  .games__mini-card-info {
+    padding: 32px;
+    width: 362px;
+  }
+  .games__mini-text {
+    width: 298px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  .games__mini-card-wrapper {
+    width: 362px;
+    height: 414px;
+  }
+  .games__mini-bg-1 {
+    left: -308px;
+    top: -294px;
+    scale: 0.7;
+  }
+  .games__mini-bg-2 {
+    left: -204px;
+    top: -197px;
+    scale: 0.7;
+  }
+  .games__mini-bg-3 {
+    left: -358px;
+    top: -159px;
+    scale: 0.8;
+  }
+  .games__mini-bg-4 {
+    left: -308px;
+    top: -216px;
+    scale: 0.8;
+  }
+  .games__mini-bg-5 {
+    left: -308px;
+    top: -216px;
+    scale: 0.8;
+  }
+  .games__mini-bg-6 {
+    left: -181px;
+    top: -203px;
+    scale: 0.76;
+  }
+  .footer {
+    height: 120px;
   }
 }
 @media (max-width: 767px) {
