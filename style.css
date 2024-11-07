@@ -238,6 +238,7 @@ body a {
   order: 1;
 }
 .games__mini {
+  padding-top: 46px;
   padding-bottom: 144px;
 }
 .games__mini-box {
@@ -252,7 +253,6 @@ body a {
 }
 .games__mini-item {
   width: 1200px;
-  height: 500px;
   border-radius: 30px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
   box-sizing: border-box;
@@ -322,6 +322,7 @@ body a {
   .games__box {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
   }
   .games__box1 {
     flex-wrap: wrap;
@@ -331,8 +332,55 @@ body a {
     flex-wrap: wrap;
     gap: 16px 28px;
   }
+  .games__mini-item {
+    width: 786px;
+  }
+  .games__mini-card-info {
+    width: 393px;
+    padding: 32px;
+  }
+  .games__mini-name {
+    font-size: 36px;
+    line-height: 39px;
+  }
+  .games__mini-text {
+    width: 329px;
+  }
+  .games__mini-card-wrapper {
+    width: 393px;
+  }
+  .games__mini-bg-1 {
+    left: -290px;
+    top: -241px;
+    scale: 0.8;
+  }
+  .games__mini-bg-2 {
+    left: -190px;
+    top: -152px;
+    scale: 0.76;
+  }
+  .games__mini-bg-3 {
+    left: -346px;
+    top: -127px;
+    scale: 0.9;
+  }
+  .games__mini-bg-4 {
+    left: -302px;
+    top: -189px;
+    scale: 0.9;
+  }
+  .games__mini-bg-5 {
+    left: -302px;
+    top: -189px;
+    scale: 0.9;
+  }
+  .games__mini-bg-6 {
+    left: -142px;
+    top: -178px;
+    scale: 0.9;
+  }
 }
-@media (min-width: 168px) and (max-width: 833px) {
+@media (min-width: 768px) and (max-width: 833px) {
   body .center {
     padding-left: calc(50% - 368px);
     padding-right: calc(50% - 368px);
@@ -351,6 +399,59 @@ body a {
     width: 354px;
     height: 290px;
   }
+  .games__mini {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .games__mini-item {
+    width: 724px;
+  }
+  .games__mini-card-info {
+    padding: 32px;
+    width: 362px;
+  }
+  .games__mini-text {
+    width: 298px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  .games__mini-card-wrapper {
+    width: 362px;
+    height: 414px;
+  }
+  .games__mini-bg-1 {
+    left: -308px;
+    top: -294px;
+    scale: 0.7;
+  }
+  .games__mini-bg-2 {
+    left: -204px;
+    top: -197px;
+    scale: 0.7;
+  }
+  .games__mini-bg-3 {
+    left: -358px;
+    top: -159px;
+    scale: 0.8;
+  }
+  .games__mini-bg-4 {
+    left: -308px;
+    top: -216px;
+    scale: 0.8;
+  }
+  .games__mini-bg-5 {
+    left: -308px;
+    top: -216px;
+    scale: 0.8;
+  }
+  .games__mini-bg-6 {
+    left: -181px;
+    top: -203px;
+    scale: 0.76;
+  }
+  .footer {
+    height: 120px;
+  }
 }
 @media (max-width: 767px) {
   body .center {
@@ -366,10 +467,10 @@ body a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 147px;
   }
   .top__nav {
     height: 51px;
-    margin-top: 131px;
   }
   .top__nav-animated {
     font-size: 16px;
@@ -383,23 +484,95 @@ body a {
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
-    padding-top: 147px;
     text-align: center;
   }
   .text {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
     width: 296px;
   }
   .link-btn {
-    width: 285px;
-    height: 55px;
-    align-items: center;
+    font-size: 16px;
+    padding: 17px 103px 17px 103px;
+  }
+  .link-btn-mobil {
+    padding: 17px 110px 17px 110px;
   }
   .games__about {
     display: none;
+  }
+  .games__mini {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .games__mini-box {
+    margin-top: 48px;
+    align-items: center;
+    gap: 24px;
+  }
+  .games__mini-item {
+    width: 343px;
+  }
+  .games__mini-item-mobil {
+    display: flex;
+    flex-direction: column;
+  }
+  .games__order-mobil {
+    order: -1;
+  }
+  .games__mini-card-wrapper {
+    width: 343px;
+    height: 284px;
+  }
+  .games__mini-bg-1 {
+    scale: 0.58;
+    left: -95%;
+    top: -123%;
+  }
+  .games__mini-bg-2 {
+    scale: 0.58;
+    top: -93%;
+    left: -73%;
+  }
+  .games__mini-bg-3 {
+    scale: 0.58;
+    top: -76%;
+    left: -122%;
+  }
+  .games__mini-bg-4 {
+    scale: 0.58;
+    left: -95%;
+    top: -96%;
+  }
+  .games__mini-bg-5 {
+    scale: 0.58;
+    left: -95%;
+    top: -96%;
+  }
+  .games__mini-bg-6 {
+    scale: 0.58;
+    left: -68%;
+    top: -90%;
+  }
+  .games__mini-card-info {
+    width: 343px;
+    padding: 29px 29px 32px 29px;
+  }
+  .games__mini-name {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .games__mini-text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .footer {
+    height: 100px;
   }
 }
 @media (min-width: 450px) and (max-width: 767px) {
