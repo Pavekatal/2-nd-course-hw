@@ -89,14 +89,14 @@ console.log(cubeNumbers(useringNumber));
 // Task 07 
 
 function getArea() {
-    let area = Math.PI * this.radius ** 2;
+    let area = Math.PI * (this.radius ** 2);
 
     return area; 
 }
 
 function getPerimeter() {
     let perimeter = 2 * Math.PI * this.radius; 
-    
+
     return perimeter; 
 } 
 
