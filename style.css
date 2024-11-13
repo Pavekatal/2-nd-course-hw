@@ -259,6 +259,10 @@ body a {
   background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
+  transition: all 0.5s;
+}
+.games__mini-item:hover {
+  scale: 1.05;
 }
 .games__mini-card-info {
   padding: 48px;
