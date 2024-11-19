@@ -3,7 +3,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1; 
 let userNumber;
 
-let guessNumber = () => {
+const guessNumber = () => {
 
     while(true) {
 
@@ -29,11 +29,8 @@ let guessNumber = () => {
     }        
 }
 
-window.onload = function() {
-
-    document.getElementById('gameOne').addEventListener('click', function(event) {
+document.getElementById('gameOne').addEventListener('click', function(event) {
         
-        event.preventDefault();
-        guessNumber();
-    });
-};
+    event.preventDefault();
+    guessNumber();
+});
