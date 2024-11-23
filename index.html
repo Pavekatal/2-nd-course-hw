@@ -16,15 +16,15 @@
             <p class="text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</p>
             <a class="link-btn" href="#about-games">Поехали!</a>
         </div>
-        <nav>
-            <ul class="top__nav">
-                <li class="top__nav-animated">Викторина</li>
-                <li class="top__nav-animated">угадай число</li>
-                <li class="top__nav-animated">Переверни текст</li>
-                <li class="top__nav-animated">Простая арифметика</li>
-                <li class="top__nav-animated">Камень, ножницы, бумага</li>
-                <li class="top__nav-animated">Генератор случайных цветов</li>
-            </ul>
+        <nav class="top__nav">
+            <div class="top__nav-box">
+                <div class="top__nav-animated">Викторина</div>
+                <div class="top__nav-animated">угадай число</div>
+                <div class="top__nav-animated">Переверни текст</div>
+                <div class="top__nav-animated">Простая арифметика</div>
+                <div class="top__nav-animated">Камень, ножницы, бумага</div>
+                <div class="top__nav-animated">Генератор случайных цветов</div>
+            </div>
         </nav>
     </header>
     <main class="games center">
@@ -123,7 +123,7 @@
                         <h2 class="games__mini-name">Простая арифметика</h2>
                         <p class="text games__mini-text">Попробуй решить простые арифметические задачи.</p>
                         <!-- <a class="link-btn link-btn-mobil" href="#">Играть!</a> -->
-                        <button class="link-btn link-btn-mobil">Играть!</button>
+                        <button id="gameTwo" class="link-btn link-btn-mobil">Играть!</button>
                     </div>
                     <div class="games__card-wrapper games__mini-card-wrapper games__wrapper-2 games__order-0 games__order-mobil">
                         <img class="games__bg-2 games__mini-bg-2" src="./img/wrapper_card-2-2.png" alt="card-2">
@@ -183,6 +183,7 @@
     <!-- <script src="./hw-3.js"></script> -->
     <!-- <script src="./hw-4.js"></script> -->
     <!-- <script src="./hw-5.js"></script> -->
+    <!-- <script src="./hw-6.js"></script> -->
     <script src="./games.js"></script>
 </body>
 </html>
