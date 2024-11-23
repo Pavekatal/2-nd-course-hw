@@ -52,7 +52,7 @@ console.log(multiArr);
 const addArr = [1, 1, 1];
 
 for (i = 0; i < 3; i++) {
-  let addItem = addArr.push(2);
+  addArr.push(2);
 }
 console.log(addArr); 
 
@@ -71,9 +71,7 @@ let originArr = [9, 8, 7, 'a', 6, 5];
 
 //  -----------или---------------------
 
-for (sortArr of originArr) {
-    sortArr = originArr.sort().filter(filterItem => filterItem !== 'a');
-  }
+let sortArr = originArr.sort().filter(filterItem => filterItem !== 'a');
 console.log(sortArr); 
 
 // Task 07

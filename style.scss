@@ -49,16 +49,24 @@ body {
 
     &__nav {
         height: 90px;
-        width: 3220px;
-        display: flex;   
-        align-items: center;
+        width: 300%;
+        overflow-x: hidden;
         background-color: $color-green1;
         box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(50px);
         position: absolute;
-        bottom: 0;  
+        bottom: 0;
+        display: flex;   
+        align-items: center;
     }
+
+    &__nav-box {
+        width: 3220px;
+        backdrop-filter: blur(50px);  
+        display: flex;      
+    }
+
+
 
     &__nav-animated {
         text-transform: uppercase;
