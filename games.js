@@ -178,7 +178,7 @@ const simpleQuiz = () => {
         let counterСorrectAnswers = 0; 
 
         for (let j = 0; j < quiz.length; j++) {
-            let questionUser = +prompt(`${quiz[j]['question']} Выберите номер варианта ответов: ${quiz[j]['options']}`); 
+            let questionUser = +prompt(`${quiz[j]['question']} \nВыберите номер варианта ответов: \n${quiz[j]['options']}`); 
 
             if (questionUser === null) {
                 alert('Вы нажали отмена. Игра закончена');
