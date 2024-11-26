@@ -116,3 +116,31 @@ document.getElementById('gameTwo').addEventListener('click', function(event) {
     event.preventDefault();
     simpleTasks();
 });
+
+// Game 03 "Переверни текст"
+
+const turnTextOver = () => {
+    
+    while(true) {
+        let userText = prompt('Напиши любой текст, и мы его перевернем!'); 
+     
+        if (userText === null) {
+            alert('Вы нажали отмена. Игра закончена')
+            break;
+        } 
+
+        userText = userText.split('').reverse().join(''); 
+        alert(`Мы перевернули твой текст: ${userText} !`);
+        let nextTime = confirm('Хотите продолжить?'); 
+
+        if (nextTime === true) {
+            turnTextOver();
+        } break;       
+    }   
+}
+
+document.getElementById('gameThree').addEventListener('click', function(event) {
+        
+    event.preventDefault();
+    turnTextOver();
+});
