@@ -12,12 +12,16 @@ console.log(yummyArr);
 
 function outputSecondLine (yummyArr, search) {
     const searchYummyArr = []; 
-    yummyArr.forEach((yummy) => {
 
-        if (yummy.toLowerCase().startsWith(search.toLowerCase())) {
-            searchYummyArr.push(yummy); 
-        }
-    });  
+    const filterYummy = yummyArr.filter(yummy => yummy.toLowerCase().startsWith(search.toLowerCase()));
+    searchYummyArr.push(filterYummy);
+
+    // yummyArr.forEach((yummy) => {
+
+    //     if (yummy.toLowerCase().startsWith(search.toLowerCase())) {
+    //         searchYummyArr.push(yummy); 
+    //     }
+    // });  
     
     console.log(searchYummyArr);
 }
@@ -46,7 +50,7 @@ console.log(minNum, maxNum);
 let randomNum; 
 
 function randomNumFunc(randomNum) {
-    randomNum = console.log(Math.floor(Math.random() * 10) + 1);
+    console.log(Math.floor(Math.random() * 10) + 1);
 }
 
 randomNumFunc(randomNum);

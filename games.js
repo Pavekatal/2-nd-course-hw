@@ -121,22 +121,22 @@ document.getElementById('gameTwo').addEventListener('click', function(event) {
 
 const turnTextOver = () => {
     
-    while(true) {
-        let userText = prompt('Напиши любой текст, и мы его перевернем!'); 
+    let userText = prompt('Напиши любой текст, и мы его перевернем!'); 
      
-        if (userText === null) {
-            alert('Вы нажали отмена. Игра закончена');
-            break;
-        } 
+    if (userText === null) {
+        alert('Вы нажали отмена. Игра закончена');
+    } 
 
-        userText = userText.split('').reverse().join(''); 
-        alert(`Мы перевернули твой текст: ${userText} !`);
-        let nextTime = confirm('Хотите продолжить?'); 
+    userText = userText.split('').reverse().join(''); 
+    alert(`Мы перевернули твой текст: ${userText} !`);
+    
+    let nextTime = confirm('Хотите продолжить?'); 
 
-        if (nextTime === true) {
-            turnTextOver();
-        } break;       
-    }   
+    if (nextTime === true) {
+        turnTextOver(); 
+    }  else {
+        alert('Вы нажали отмена. Игра закончена');
+    }
 }
 
 document.getElementById('gameThree').addEventListener('click', function(event) {
