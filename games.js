@@ -116,3 +116,97 @@ document.getElementById('gameTwo').addEventListener('click', function(event) {
     event.preventDefault();
     simpleTasks();
 });
+
+// Game 03 "Переверни текст"
+
+const turnTextOver = () => {
+    
+    let userText = prompt('Напиши любой текст, и мы его перевернем!'); 
+     
+    if (userText === null) {
+        alert('Вы нажали отмена. Игра закончена');
+    } 
+
+    userText = userText.split('').reverse().join(''); 
+    alert(`Мы перевернули твой текст: ${userText} !`);
+    
+    let nextTime = confirm('Хотите продолжить?'); 
+
+    if (nextTime === true) {
+        turnTextOver(); 
+    }  else {
+        alert('Вы нажали отмена. Игра закончена');
+    }
+}
+
+document.getElementById('gameThree').addEventListener('click', function(event) {
+        
+    event.preventDefault();
+    turnTextOver();
+});
+
+// Game 04 "Викторина"
+
+const simpleQuiz = () => {
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let startQuiz = confirm('Давайте сыграем в игру "Викторина", где надо ответить на несколько вопросов. Начнем?');
+
+    if (startQuiz == true) {
+        quizGame(); 
+    } else {
+        alert('Вы нажали отмена. Игра закончена');
+    }
+
+    function quizGame() {
+        let counterСorrectAnswers = 0; 
+
+        for (let j = 0; j < quiz.length; j++) {
+            let questionUser = +prompt(`${quiz[j]['question']} \nВыберите номер варианта ответов: \n${quiz[j]['options']}`); 
+
+            if (questionUser === null) {
+                alert('Вы нажали отмена. Игра закончена');
+                break;
+            } 
+              
+            if (questionUser === quiz[j]['correctAnswer']) {
+                alert('Правильно, молодец!');
+                counterСorrectAnswers++; 
+            } else {
+                alert('Ответ неправильный');
+            }
+        }
+        
+        alert(`Отлично! Количество правильных ответов: ${counterСorrectAnswers} !`);
+        
+        let nextQuiz = confirm('Хотите сыграть еще раз?');
+
+        if (nextQuiz == true) {
+        quizGame(); 
+        } else {
+            alert('Вы нажали отмена. Игра закончена');
+        } 
+    }
+}
+
+document.getElementById('gameFive').addEventListener('click', function(event) {
+        
+    event.preventDefault();
+    simpleQuiz();
+});
