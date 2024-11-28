@@ -210,3 +210,66 @@ document.getElementById('gameFive').addEventListener('click', function(event) {
     event.preventDefault();
     simpleQuiz();
 });
+
+// Game 05 "Камень, ножницы, бумага"
+
+const rockScissorsPaper = () => {
+
+    const arrOptions = ['камень', 'ножницы', 'бумага']; 
+
+    let userOption = prompt(`Выбери один из вариантов: '${arrOptions[0]}', '${arrOptions[1]}', '${arrOptions[2]}'`); 
+
+    if (userOption === null) {
+        alert('Ты нажал отмена. Игра закончена');
+        return;       
+    } 
+
+    if (userOption.toLowerCase() !== 'камень' && userOption.toLowerCase() !== 'ножницы' && userOption.toLowerCase() !== 'бумага') {
+        alert('Ты написал что-то не то. Попробуй выбрать снова!');
+        rockScissorsPaper(); 
+        return; 
+    } 
+    
+    const systemRandomOption = Math.floor(Math.random() * arrOptions.length); 
+    const systemOption =  arrOptions[systemRandomOption]; 
+
+    function ruleFunc(systemOption, userOption) {
+
+        systemOption.toLowerCase(); 
+        userOption.toLowerCase(); 
+        
+        if (systemOption === userOption) {
+            return 'Ничья!'; 
+        }
+
+        const rules = {
+        камень: 'ножницы',
+        ножницы: 'бумага',
+        бумага: 'камень'
+        }
+
+        return rules[systemOption] === userOption ? 'Ты проиграл!' : 'Ты выиграл!'; 
+    }
+
+    function winnerFunc(systemOption, userOption) {
+        let resultGame = ruleFunc(systemOption, userOption);
+        alert(`Я выбрал '${systemOption}', а ты выбрал '${userOption}'.`)
+        alert(resultGame); 
+    }
+
+    winnerFunc(systemOption, userOption);
+
+    let repeatGame = confirm('Хотите сыграть еще раз?');
+
+    if (repeatGame == true) {
+        rockScissorsPaper(); 
+    } else {
+        alert('Ты нажал отмена. Игра закончена');
+    } 
+}
+
+document.getElementById('gameFour').addEventListener('click', function(event) {
+        
+    event.preventDefault();
+    rockScissorsPaper();
+});
