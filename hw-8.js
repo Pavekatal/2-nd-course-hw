@@ -26,7 +26,7 @@ function filter(arr, ruleFunction) {
 
     for (let i = 0; i < arr.length; i++) {
         if (ruleFunction(arr[i])) {
-            result.push(ruleFunction(arr[i]));
+            result.push(arr[i]);
         }    
     }
 
