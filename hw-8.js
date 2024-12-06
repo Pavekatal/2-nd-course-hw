@@ -12,14 +12,10 @@ console.log(peopleArr.sort((a, b) => a.age - b.age));
 // Task 02
 
 function isPositive(item) {
-    if (item >= 0) {
-        return item;
-    }
+        return item >= 0;
 }
 function isMale(item) {
-    if (item.gender === 'male') {
-        return item; 
-    }
+        return item.gender === 'male';
 }
 function filter(arr, ruleFunction) {
     const result = []; 
