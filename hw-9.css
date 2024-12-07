@@ -1,0 +1,12 @@
+.tasks {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.tasks__heading {
+    text-decoration: underline;
+}
+
+.text-blue{
+    color: blue;
+}
