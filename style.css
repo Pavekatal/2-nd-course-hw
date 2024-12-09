@@ -51,13 +51,22 @@ body a {
   align-items: center;
 }
 .top__nav-box {
-  width: 3220px;
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   display: flex;
   text-wrap: nowrap;
+  animation: runline 20s linear infinite;
+}
+@keyframes runline {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 .top__nav-animated {
+  width: 100%;
   text-transform: uppercase;
   color: rgb(32, 32, 39);
   font-size: 30px;

@@ -61,15 +61,24 @@ body {
     }
 
     &__nav-box {
-        width: 3220px;
+        // width: 100%; //3220px;
         backdrop-filter: blur(50px);  
         display: flex; 
-        text-wrap: nowrap;     
+        text-wrap: nowrap;  
+        animation: runline 20s linear infinite;   
     }
 
-
+    @keyframes runline {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
 
     &__nav-animated {
+        width: 100%;
         text-transform: uppercase;
         color: $color-black2;
         font-size: 30px;
