@@ -31,7 +31,7 @@ body a {
   background-image: url(./img/bg_2.png);
   background-repeat: no-repeat;
   background-size: auto;
-  background-position: -7% 90%;
+  background-position: -4% 101%;
   overflow: hidden;
   position: relative;
 }
@@ -46,12 +46,11 @@ body a {
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: absolute;
   bottom: 0;
-  display: flex;
-  align-items: center;
 }
 .top__nav-box {
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
+  padding-top: 24px;
   display: flex;
   text-wrap: nowrap;
   animation: runline 20s linear infinite;
@@ -75,6 +74,8 @@ body a {
   content: url(./img/star_animated.svg);
   margin-left: 51px;
   margin-right: 51px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .heading {
@@ -107,6 +108,9 @@ body a {
   display: inline-block;
   transition: all 0.5s;
 }
+.link-btn__top {
+  padding: 17px 64px 17px 64px;
+}
 
 .link-btn:hover {
   box-sizing: border-box;
@@ -121,7 +125,7 @@ body a {
   background-image: url(./img/game-bg.png);
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: -15% 25%;
+  background-position: 10% 60%;
 }
 .games__about {
   padding-top: 94px;
@@ -134,6 +138,7 @@ body a {
   color: rgb(255, 255, 255);
   margin-top: 24px;
   margin-bottom: 72px;
+  width: 788px;
 }
 .games__box1 {
   display: flex;
