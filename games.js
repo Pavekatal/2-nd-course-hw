@@ -273,3 +273,12 @@ document.getElementById('gameFour').addEventListener('click', function(event) {
     event.preventDefault();
     rockScissorsPaper();
 });
+
+// Game 06 "Генератор случайных цветов"
+
+const gameSixBtn = document.getElementById('gameSix');
+const themeBgcEl = document.querySelector('.games');
+
+gameSixBtn.addEventListener('click', function() {
+    themeBgcEl.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+});

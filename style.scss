@@ -49,7 +49,7 @@ body {
 
     &__nav {
         height: 90px;
-        width: 100%;
+        // width: 100%;
         overflow-x: hidden;
         background-color: $color-green1;
         box-sizing: border-box;
@@ -78,7 +78,7 @@ body {
     }
 
     &__nav-animated {
-        width: 100%;
+        // width: 100%;
         text-transform: uppercase;
         color: $color-black2;
         font-size: 30px;
