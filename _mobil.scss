@@ -14,7 +14,7 @@
     .top {
         height: 700px;
         background-image: url(./img/bg-mobil_2.png);
-        background-position: -50% 400%;
+        background-position: -50% 411%;
 
         &__heading {
             display: flex;
@@ -26,6 +26,10 @@
         &__nav {
             height: 51px;
             // margin-top: 131px;
+        }
+
+        &__nav-box {
+            padding-top: 14px;
         }
 
         &__nav-animated {
@@ -59,6 +63,12 @@
         padding: 17px 103px 17px 103px;
     }
 
+    .link-btn:hover {
+        border: 1px solid $color-black2;
+        color: $color-white;
+        background: $color-black2;
+    }
+
     .link-btn-mobil {
         padding: 17px 110px 17px 110px;
     }
@@ -69,6 +79,10 @@
             display: none;
         }
 
+        &__heading {
+            text-align: start;
+        }
+
         &__mini {
             padding-top: 48px;
             padding-bottom: 48px;
@@ -77,7 +91,7 @@
         &__mini-box {
             margin-top: 48px;
             align-items: center;
-            gap: 24px;
+            gap: 27px;
         }
 
         &__mini-item {
@@ -130,10 +144,14 @@
             top: -96%;
         }
 
+        &__mini-text-mobil {
+            width: 245px;
+        }
+
         &__mini-bg-6 {
             scale: 0.58;
-            left: -68%;
-            top: -90%;
+            left: -70%;
+            top: -91%;
         }
 
         &__mini-card-info {
@@ -157,6 +175,10 @@
 
     .footer {
         height: 100px;
+
+        &__text {
+            font-size: 16px;
+        }
     }
 }
 

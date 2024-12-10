@@ -135,9 +135,7 @@ body {
 }
 
 .link-btn:hover {
-    box-sizing: border-box;
     border: 1px solid $color-black1;
-    border-radius: 60px;
     color: $color-black1;
     background: $color-white;
 }
@@ -337,9 +335,9 @@ body {
         transition: all 0.5s;
     }
 
-    &__mini-item:hover {
-        scale: 1.05;
-    }
+    // &__mini-item:hover {
+    //     scale: 1.05;
+    // }
 
     &__mini-card-info {
         padding: 48px;
