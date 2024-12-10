@@ -126,12 +126,11 @@ body {
     outline: none;
     padding: 18px 78px 18px 78px;
     display: inline-block;
-    transition: all 0.5s;
+    transition: all 0.5s;    
+}
 
-    &__top {
-        padding: 17px 64px 17px 64px;
-    }
-    
+.link-btn-top {
+    padding: 17px 64px 17px 64px;
 }
 
 .link-btn:hover {

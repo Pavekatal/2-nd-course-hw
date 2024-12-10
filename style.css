@@ -108,7 +108,8 @@ body a {
   display: inline-block;
   transition: all 0.5s;
 }
-.link-btn__top {
+
+.link-btn-top {
   padding: 17px 64px 17px 64px;
 }
 
