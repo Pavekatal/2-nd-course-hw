@@ -217,18 +217,18 @@ const rockScissorsPaper = () => {
 
     const arrOptions = ['камень', 'ножницы', 'бумага']; 
 
-    let userOption = prompt(`Выбери один из вариантов: '${arrOptions[0]}', '${arrOptions[1]}', '${arrOptions[2]}'`); 
+    let userOption = prompt(`Выбери один из вариантов: '${arrOptions[0]}', '${arrOptions[1]}', '${arrOptions[2]}'`).toLocaleLowerCase();  
 
     if (userOption === null) {
         alert('Ты нажал отмена. Игра закончена');
         return;       
     } 
 
-    if (userOption.toLowerCase() !== 'камень' && userOption.toLowerCase() !== 'ножницы' && userOption.toLowerCase() !== 'бумага') {
+    if (userOption !== 'камень' && userOption !== 'ножницы' && userOption !== 'бумага') {
         alert('Ты написал что-то не то. Попробуй выбрать снова!');
         rockScissorsPaper(); 
         return; 
-    } 
+    }
     
     const systemRandomOption = Math.floor(Math.random() * arrOptions.length); 
     const systemOption =  arrOptions[systemRandomOption]; 
@@ -236,7 +236,6 @@ const rockScissorsPaper = () => {
     function ruleFunc(systemOption, userOption) {
 
         systemOption.toLowerCase(); 
-        userOption.toLowerCase(); 
         
         if (systemOption === userOption) {
             return 'Ничья!'; 

@@ -233,6 +233,9 @@ body a {
   background: rgb(255, 255, 255);
   border-radius: 30px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .games__number {
   padding: 8px 16px 10px 16px;
@@ -240,6 +243,8 @@ body a {
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
 }
 .games__name {
   color: rgb(32, 32, 39);

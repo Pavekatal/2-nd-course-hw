@@ -275,6 +275,9 @@ body {
         background: $color-white;
         border-radius: 30px;
         box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__number {
@@ -283,6 +286,8 @@ body {
         font-size: 16px;
         font-weight: 500;
         line-height: 110%;
+        border-radius: 52.58px;
+        background: $color-gray;
     }
 
     &__name {
